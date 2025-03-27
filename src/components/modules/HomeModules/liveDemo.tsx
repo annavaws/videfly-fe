@@ -11,17 +11,15 @@ const LiveDemo = () => {
         <div className="w-[85%]">
           <div className="bg-white rounded-2xl flex flex-row relative shadow-lg h-[640px]">
             <div className="flex flex-col w-1/2 p-10">
-              <div className={`text-xl font-${poppins.className}`}>
-                Live Demo
-              </div>
-              <div className={`text-5xl font-${nunito.className}`}>
+              <div className={`text-xl ${poppins.className}`}>Live Demo</div>
+              <div className={`text-5xl ${nunito.className}`}>
                 Coba Fitur URL to Video{" "}
-                <span className="text-gradient">Tanpa Biaya!</span>
+                <span className="text-purple-500">Tanpa Biaya!</span>
               </div>
-              <div className={`text-md font-${poppins.className}`}>
+              <div className={`text-md ${poppins.className}`}>
                 Masukkan URL, ubah jadi video dalam hitungan detik.
               </div>
-              <div className={`text-md font-${poppins.className}`}>
+              <div className={`text-md ${poppins.className}`}>
                 Mudah dan gratis!
               </div>
 
