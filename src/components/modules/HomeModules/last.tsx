@@ -105,14 +105,14 @@ const Last = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row w-full py-18">
+      <div className="flex flex-col md:flex-row w-full py-18 justify-between gap-4">
         <div
           className={`md:-1/3 flex items-center text-sm md:text-base lg:text-lg font-medium text-[#545454] ${poppins.className}`}
         >
           Platform yang didukung:
         </div>
         <div className="md:w-2/3 flex justify-center items-center h-full">
-          <div className="w-full flex justify-center items-center py-10">
+          <div className="w-full  flex justify-center items-center py-10">
             <Marquee speed={50} gradient={false} loop={0} direction="left">
               <div className="flex items-center space-x-16">
                 <Image
