@@ -1,9 +1,11 @@
 import { nunito, poppins } from "@/styles/fonts";
 import React from "react";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const Last = () => {
   return (
-    <div className="p-20 relative min-h-screen bg-gray-100 justify-center items-center">
+    <div className="p-20 px-32 relative min-h-screen bg-gray-100 justify-center items-center">
       <div className="flex flex-col w-full bg-white shadow-lg rounded-2xl justify-center items-center p-12 px-16">
         <div className="flex flex-col space-y-6 justify-center items-center">
           <div className={`text-5xl ${nunito.className} font-bold`}>
@@ -97,11 +99,54 @@ const Last = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row pt-24">
+      <div className="flex flex-row w-full py-18">
         <div
-          className={`text-base font-medium text-[#545454] ${poppins.className}`}
+          className={`w-1/3 flex items-center text-lg font-medium text-[#545454] ${poppins.className}`}
         >
-          Platform yang didukung
+          Platform yang didukung:
+        </div>
+        <div className="w-2/3 flex justify-center items-center h-full">
+          <div className="w-full flex justify-center items-center py-10">
+            <Marquee speed={50} gradient={false} loop={0} direction="left">
+              <div className="flex items-center space-x-16">
+                <Image
+                  src="/assets/brands/tokopedia.png"
+                  alt="Brand 1"
+                  width={80}
+                  height={32}
+                  className="object-contain ml-16"
+                />
+                <Image
+                  src="/assets/brands/sociolla.png"
+                  alt="Brand 2"
+                  width={80}
+                  height={32}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/brands/shopee.png"
+                  alt="Brand 3"
+                  width={80}
+                  height={32}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/brands/tiktok.png"
+                  alt="Brand 4"
+                  width={100}
+                  height={32}
+                  className="object-contain"
+                />
+                <Image
+                  src="/assets/brands/beauty_haul.png"
+                  alt="Brand 5"
+                  width={80}
+                  height={32}
+                  className="object-contain"
+                />
+              </div>
+            </Marquee>
+          </div>
         </div>
       </div>
     </div>
