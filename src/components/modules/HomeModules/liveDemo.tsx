@@ -38,12 +38,29 @@ const LiveDemo = () => {
   };
 
   return (
-    <div className="bg-red-200">
-      <div className="relative bg-gradient-to-tl from-[#F1EDFD] to-[#7261EF] min-h-screen flex justify-center items-center">
+    <div className="min-h-screen">
+      <div className="relative bg-gradient-to-tl from-[#F1EDFD] to-[#7261EF] min-h-screen flex justify-center items-center py-20">
         <div className="w-[85%]">
-          <div className="bg-white rounded-2xl flex flex-row relative shadow-lg h-[640px]">
+          <div className="bg-white rounded-2xl flex flex-col md:flex-row relative shadow-lg h-[640px]">
             {/* Left Part */}
-            <div className="flex flex-col w-7/12 p-10 space-y-6">
+            <div className="absolute md:hidden justify-end items-end right-0 overflow-clip pb-20">
+              {/* Logo Image behind the Live Demo image */}
+              <Image
+                src="/assets/substract-o.png"
+                alt="logo-o"
+                width={200}
+                height={200}
+                className="absolute -top-10 object-contain"
+              />
+              <Image
+                src="/assets/mockup.png"
+                alt="mockup"
+                width={180}
+                height={180}
+                className="relative object-contain"
+              />
+            </div>
+            <div className="pt-32 md:pt-10 flex flex-col w-full md:w-9/12 lg:w-7/12 p-4 md:p-10 space-y-6">
               <div
                 className={`text-sm ${poppins.className} flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
               >
@@ -82,20 +99,22 @@ const LiveDemo = () => {
                 <span className="text-[#703BE7]">Live Demo</span>
               </div>
               <div
-                className={`text-5xl ${nunito.className} font-bold flex flex-col space-y-2`}
+                className={`${nunito.className} font-bold flex flex-col space-y-2 text-xl md:text-3xl lg:text-5xl`}
               >
                 <span>Coba Fitur URL to Video </span>
-                <span className="text-purple-500">Tanpa Biaya!</span>
+                <span className="bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text">
+                  Tanpa Biaya!
+                </span>
               </div>
               <div
-                className={`text-base text-[#545454] ${poppins.className} flex flex-col space-y-2`}
+                className={`text-sm md:text-base text-[#545454] ${poppins.className} flex flex-col`}
               >
                 <span>Masukkan URL, ubah jadi video dalam hitungan detik.</span>
                 <span>Mudah dan gratis!</span>
               </div>
 
               <div
-                className={`flex flex-row space-x-4 pt-10 ${poppins.className}`}
+                className={`text-xs md:text-sm flex flex-row space-x-4 pt-2 md:pt-10 ${poppins.className}`}
               >
                 {/* Dropdown */}
                 <div className="relative w-full">
@@ -146,9 +165,11 @@ const LiveDemo = () => {
                             />
                           </div>
 
-                          <div className="flex flex-col text-sm">
-                            <span className="font-medium">{product.name}</span>
-                            <span className="text-[#545454]">
+                          <div className="flex flex-col text-xs md:text-sm w-full">
+                            <span className="font-medium truncate">
+                              {product.name}
+                            </span>
+                            <span className="text-[#545454] truncate">
                               {product.link}
                             </span>
                           </div>
@@ -158,26 +179,26 @@ const LiveDemo = () => {
                   )}
                 </div>
                 {/* Button */}
-                <button className="px-6 py-2 bg-[#703BE7] text-white rounded-lg hover:scale-105 transform duration-150 transition-all ease-in-out cursor-pointer">
+                <button className="px-3 md:px-6 py-2 bg-[#703BE7] text-white rounded-lg hover:scale-105 transform duration-150 transition-all ease-in-out cursor-pointer">
                   Analisa
                 </button>
               </div>
             </div>
-            <div className="relative w-1/2 flex justify-end items-center overflow-clip">
+            <div className="hidden md:flex relative w-full md:w-6/12  justify-end items-center overflow-clip order-1 md:order-2">
               {/* Logo Image behind the Live Demo image */}
               <Image
                 src="/assets/substract-o.png"
                 alt="logo-o"
                 width={520}
                 height={520}
-                className="absolute -top-10 object-contain"
+                className="absolute -top-10 md:w-[520] md:-top-10 object-contain"
               />
               <Image
                 src="/assets/mockup.png"
                 alt="mockup"
                 width={500}
                 height={500}
-                className="absolute object-contain"
+                className="absolute md:w-[520] md:top-10 object-contain"
               />
             </div>
           </div>
