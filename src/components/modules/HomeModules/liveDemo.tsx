@@ -61,7 +61,9 @@ const LiveDemo = () => {
               />
             </div>
             <div className="pt-32 md:pt-10 flex flex-col w-full md:w-9/12 lg:w-7/12 p-4 md:p-10 space-y-6">
-              <div
+              {/* Live demo button */}
+              <a
+                href="#live-demo"
                 className={`text-sm ${poppins.className} flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
               >
                 <span>
@@ -97,7 +99,7 @@ const LiveDemo = () => {
                   </svg>
                 </span>
                 <span className="text-[#703BE7]">Live Demo</span>
-              </div>
+              </a>
               <div
                 className={`${nunito.className} font-bold flex flex-col space-y-2 text-xl md:text-3xl lg:text-5xl`}
               >

@@ -24,7 +24,8 @@ const Tutorial = () => {
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center">
-          <div
+          <a
+            href="#cara-kerja"
             className={`text-sm flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
           >
             <span>
@@ -60,7 +61,7 @@ const Tutorial = () => {
               </svg>
             </span>
             <span className="text-[#703BE7]">Tutorial</span>
-          </div>
+          </a>
         </div>
         <div
           className={`pt-4 text-center text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold`}

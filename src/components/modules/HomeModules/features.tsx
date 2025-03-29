@@ -10,7 +10,8 @@ const Features = () => {
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center">
-          <div
+          <a
+            href="#fitur-ai"
             className={`text-sm flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
           >
             <span>
@@ -46,7 +47,7 @@ const Features = () => {
               </svg>
             </span>
             <span className="text-[#703BE7]">Features</span>
-          </div>
+          </a>
         </div>
 
         <div
