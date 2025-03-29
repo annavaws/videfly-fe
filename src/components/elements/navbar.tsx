@@ -62,7 +62,7 @@ const Navbar = () => {
       )}
 
       <div className="flex lg:w-2/6 justify-center space-x-4">
-        <button className="px-4 py-2 bg-gray-300 text-black rounded-lg hover:scale-105 duration-150 transition-all ease-in-out cursor-pointer">
+        <button className="border border-gray-300 px-4 py-2 bg-gray-100 text-black rounded-lg hover:scale-105 duration-150 transition-all ease-in-out cursor-pointer">
           Masuk
         </button>
         <button className="hidden lg:block px-4 py-2 bg-gradient-to-bl from-[#7F52FF] to-[#FB8570] text-white rounded-lg hover:scale-105 transform duration-150 transition-all ease-in-out cursor-pointer">

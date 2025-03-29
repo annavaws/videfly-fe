@@ -18,7 +18,10 @@ const Tutorial = () => {
   };
 
   return (
-    <div className="p-8 px-12 lg:p-10 lg:px-24 relative min-h-screen justify-center items-center text-black pt-8 pb-20">
+    <div
+      id="cara-kerja"
+      className="p-8 px-12 lg:p-10 lg:px-24 relative min-h-screen justify-center items-center text-black pt-8 pb-20"
+    >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center">
           <div

@@ -5,6 +5,7 @@ import Image from "next/image";
 const Features = () => {
   return (
     <div
+      id="fitur-ai"
       className={`${poppins.className} text-center p-10 px-12 lg:px-12 xl:px-24 relative min-h-screen bg-white justify-center items-center pb-32`}
     >
       <div className="flex flex-col justify-center items-center">
