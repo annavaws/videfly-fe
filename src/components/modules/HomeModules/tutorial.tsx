@@ -18,8 +18,8 @@ const Tutorial = () => {
   };
 
   return (
-    <div className="p-10 px-24 relative min-h-screen justify-center items-center text-black py-20">
-      <div className="flex flex-col space-y-4 justify-center items-center">
+    <div className="p-8 px-12 lg:p-10 lg:px-24 relative min-h-screen justify-center items-center text-black py-20">
+      <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center">
           <div
             className={`text-sm flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
@@ -59,17 +59,19 @@ const Tutorial = () => {
             <span className="text-[#703BE7]">Tutorial</span>
           </div>
         </div>
-        <div className={`text-4xl ${nunito.className} font-bold`}>
+        <div
+          className={`pt-4 text-center text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold`}
+        >
           Buat Konten Menarik Untuk Bisnismu
         </div>
         <div
-          className={`text-4xl ${nunito.className} font-bold bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text`}
+          className={`text-center text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text`}
         >
           Dalam 3 Langkah Mudah!
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row pt-20 px-10">
-        <div className="w-1/2 justify-center flex">
+      <div className="flex flex-col justify-center items-center lg:flex-row gap-4 lg:gap-12 pt-6 lg:pt-16 lg:px-10">
+        <div className="w-full lg:w-1/2 justify-center flex">
           <Image
             src={stepImages[activeStep - 1]}
             alt="mockup-tutorial"
@@ -78,7 +80,7 @@ const Tutorial = () => {
             className="object-contain"
           />
         </div>
-        <div className="flex flex-col w-1/2 space-y-4 justify-center items-center">
+        <div className="flex flex-col w-full md:w-2/3 lg:w-1/2 space-y-4 justify-center items-center">
           <div
             onClick={() => handleStepClick(1)} // Set active step to 1 on click
             className={`p-3 rounded-3xl border border-gray-200 cursor-pointer shadow ${
@@ -86,7 +88,7 @@ const Tutorial = () => {
             }`}
           >
             <div
-              className={`w-full h-full text-lg font-semibold py-2 ${
+              className={`w-full h-full text-sm md:text-base lg:text-lg font-semibold py-2 ${
                 poppins.className
               } ${
                 activeStep === 1
@@ -96,7 +98,7 @@ const Tutorial = () => {
             >
               Step 1 - Masukkan URL
               <div
-                className={`text-sm font-normal ${poppins.className} text-[#545454]`}
+                className={`text-xs md:text-sm font-normal ${poppins.className} text-[#545454]`}
               >
                 Cukup Tempelkan tautan produk atau bisnis Anda, dan sistem kami
                 akan secara otomatis mengambil informasi penting untuk memulai.
@@ -111,7 +113,7 @@ const Tutorial = () => {
             }`}
           >
             <div
-              className={`w-full h-full text-lg font-semibold py-2 ${
+              className={`w-full h-full text-sm md:text-base lg:text-lg font-semibold py-2 ${
                 poppins.className
               } ${
                 activeStep === 2
@@ -121,7 +123,7 @@ const Tutorial = () => {
             >
               Step 2 - Konfirmasi Informasi & Personalisasi
               <div
-                className={`text-sm font-normal ${poppins.className} text-[#545454]`}
+                className={`text-xs md:text-sm font-normal ${poppins.className} text-[#545454]`}
               >
                 Periksa detail produk yang diambil, tambahkan sentuhan pribadi,
                 dan sesuaikan preferensi untuk memastikan hasil yang menarik.
@@ -136,7 +138,7 @@ const Tutorial = () => {
             }`}
           >
             <div
-              className={`w-full h-full text-lg font-semibold py-2 ${
+              className={`w-full h-full text-sm md:text-base lg:text-lg font-semibold py-2 ${
                 poppins.className
               } ${
                 activeStep === 3
@@ -146,7 +148,7 @@ const Tutorial = () => {
             >
               Step 3 - Generate & Unduh
               <div
-                className={`text-sm font-normal ${poppins.className} text-[#545454]`}
+                className={`text-xs md:text-sm font-normal ${poppins.className} text-[#545454]`}
               >
                 Klik tombol untuk menghasilkan dan mengunduh konten dalam format
                 yang Anda inginkan.
