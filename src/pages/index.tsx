@@ -6,7 +6,7 @@ import Tutorial from "@/components/modules/HomeModules/tutorial";
 export default function Home() {
   return (
     <>
-      <div className="relative z-10">
+      <div className="relative z-10 overflow-hidden">
         <LiveDemo />
         <Features />
         <Tutorial />

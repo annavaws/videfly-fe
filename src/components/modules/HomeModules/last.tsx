@@ -5,13 +5,17 @@ import Marquee from "react-fast-marquee";
 
 const Last = () => {
   return (
-    <div className="p-20 px-32 relative min-h-screen bg-gray-100 justify-center items-center">
-      <div className="flex flex-col w-full bg-white shadow-lg rounded-2xl justify-center items-center p-12 px-16">
-        <div className="flex flex-col space-y-6 justify-center items-center">
-          <div className={`text-5xl ${nunito.className} font-bold`}>
+    <div className="py-12 px-8 lg:p-20 lg:px-32 relative min-h-screen bg-gray-100 justify-center items-center">
+      <div className="flex flex-col w-full bg-white shadow-lg rounded-2xl justify-center items-center p-4 px-6 md:p-8 md:px-12 lg:p-12 lg:px-16">
+        <div className="flex flex-col space-y-6 justify-center items-center text-center">
+          <div
+            className={`text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold`}
+          >
             Lebih Produktif, Lebih Untung, Hasil Hemat!
           </div>
-          <div className={`text-md ${poppins.className} text-[#545454]`}>
+          <div
+            className={`text-sm md:text-base ${poppins.className} text-[#545454]`}
+          >
             Jangan tunggu lagi! Buat video pakai Videfly sekarang, biar cepat,
             untung besar, dan hemat!
           </div>
@@ -19,7 +23,9 @@ const Last = () => {
             <button
               className={`${poppins.className} flex items-center justify-center px-7 py-2 bg-gradient-to-r from-[#7F52FF] to-[#FB8570] text-white rounded-xl hover:opacity-90 transform duration-150 transition-all ease-in-out cursor-pointer`}
             >
-              <div className="font-semibold text-lg">Buat Video</div>
+              <div className="font-semibold text-sm md:text-base lg:text-lg">
+                Buat Video
+              </div>
               <div className="ml-5">
                 <svg
                   width="25"
@@ -50,15 +56,15 @@ const Last = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-between pt-20 w-full">
-          <div className="flex flex-col items-center space-y-12 flex-1">
+        <div className="flex flex-row justify-between pt-12 md:pt-16 lg:pt-20 w-full">
+          <div className="flex flex-col items-center space-y-4 md:space-y-8 lg:space-y-12 flex-1">
             <div
-              className={`text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
+              className={`text-xl md:text-5xl lg:text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
             >
               70 %
             </div>
             <div
-              className={`text-base font-medium text-[#545454] ${poppins.className}`}
+              className={`text-center text-xs md:text-base font-medium text-[#545454] ${poppins.className}`}
             >
               Produktivitas meningkat
             </div>
@@ -68,14 +74,14 @@ const Last = () => {
             <div className="w-1 border-l border-gray-300 mx-4 h-full"></div>
           </div>
 
-          <div className="flex flex-col items-center space-y-12 flex-1">
+          <div className="flex flex-col items-center space-y-4 md:space-y-8 lg:space-y-12 flex-1">
             <div
-              className={`text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
+              className={`text-xl md:text-5xl lg:text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
             >
               50 %
             </div>
             <div
-              className={`text-base font-medium text-[#545454] ${poppins.className}`}
+              className={`text-center text-xs md:text-base font-medium text-[#545454] ${poppins.className}`}
             >
               Kenaikan ROI
             </div>
@@ -85,27 +91,27 @@ const Last = () => {
             <div className="w-1 border-l border-gray-300 mx-4 h-full"></div>
           </div>
 
-          <div className="flex flex-col items-center space-y-12 flex-1">
+          <div className="flex flex-col items-center space-y-4 md:space-y-8 lg:space-y-12 flex-1">
             <div
-              className={`text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
+              className={`text-xl md:text-5xl lg:text-7xl font-bold ${nunito.className} bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text `}
             >
               20 X
             </div>
             <div
-              className={`text-base font-medium text-[#545454] ${poppins.className}`}
+              className={`text-center text-xs md:text-base font-medium text-[#545454] ${poppins.className}`}
             >
               Lebih Hemat
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-row w-full py-18">
+      <div className="flex flex-col md:flex-row w-full py-18">
         <div
-          className={`w-1/3 flex items-center text-lg font-medium text-[#545454] ${poppins.className}`}
+          className={`md:-1/3 flex items-center text-sm md:text-base lg:text-lg font-medium text-[#545454] ${poppins.className}`}
         >
           Platform yang didukung:
         </div>
-        <div className="w-2/3 flex justify-center items-center h-full">
+        <div className="md:w-2/3 flex justify-center items-center h-full">
           <div className="w-full flex justify-center items-center py-10">
             <Marquee speed={50} gradient={false} loop={0} direction="left">
               <div className="flex items-center space-x-16">
