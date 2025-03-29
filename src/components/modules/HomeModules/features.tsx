@@ -5,9 +5,9 @@ import Image from "next/image";
 const Features = () => {
   return (
     <div
-      className={`${poppins.className} text-center p-10 px-24 relative min-h-screen bg-white justify-center items-center pb-32`}
+      className={`${poppins.className} text-center p-10 px-12 lg:px-12 xl:px-24 relative min-h-screen bg-white justify-center items-center pb-32`}
     >
-      <div className="space-y-6 flex flex-col">
+      <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center">
           <div
             className={`text-sm flex w-fit items-center space-x-2 border rounded-full p-1 px-2 border-[#703BE7]`}
@@ -48,19 +48,21 @@ const Features = () => {
           </div>
         </div>
 
-        <div className={`text-4xl ${nunito.className} font-bold`}>
+        <div
+          className={`pt-4 text-center text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold`}
+        >
           Bagaimana Videfly Membantu Bisnismu?
         </div>
         <div
-          className={`text-4xl ${nunito.className} font-bold bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text`}
+          className={`text-center text-xl md:text-3xl lg:text-5xl ${nunito.className} font-bold bg-gradient-to-r from-[#703BE7] to-[#FFA899] text-transparent bg-clip-text`}
         >
           Lebih Efisien, Lebih Mudah, Hasil Maksimal!
         </div>
       </div>
-      <div className="flex flex-row gap-3 px-9 pt-16">
+      <div className="text-left flex flex-col md:flex-row gap-3 lg:px-9 pt-12 lg:pt-16">
         {/* Item 1 */}
         <div className="flex flex-col bg-[#F5F5F9] rounded-xl p-4 py-6 justify-between">
-          <div className="h-[60%] w-full">
+          <div className="h-[60%] w-full flex justify-center items-center">
             <Image
               src="/assets/ft_mockup1.png"
               alt="mockup"
@@ -71,7 +73,7 @@ const Features = () => {
           </div>
           <div className="space-y-2">
             <div
-              className={`${nunito.className} flex font-bold text-xl gap-2 items-center`}
+              className={`${nunito.className} flex font-bold text-base lg:text-xl gap-2 items-center`}
             >
               <span>
                 <svg
@@ -97,7 +99,7 @@ const Features = () => {
               </span>
               <span>Buat Video dari URL</span>
             </div>
-            <div className="text-sm text-[#545454] text-left">
+            <div className="text-xs md:text-sm text-[#545454] text-left">
               Cukup masukkan tautan produk atau bisnismu, dan Videfly akan
               otomatis mengambil informasi serta menghasilkan video siap pakai.
             </div>
@@ -106,7 +108,7 @@ const Features = () => {
 
         {/* Item 2 */}
         <div className="flex flex-col bg-[#F5F5F9] rounded-xl p-4 py-6 justify-between">
-          <div className="h-[60%] w-full">
+          <div className="h-[60%] w-full flex justify-center items-center">
             <Image
               src="/assets/ft_mockup2.png"
               alt="mockup"
@@ -117,7 +119,7 @@ const Features = () => {
           </div>
           <div className="space-y-2">
             <div
-              className={`${nunito.className} flex font-bold text-xl gap-2 items-center`}
+              className={`${nunito.className} flex font-bold text-base lg:text-xl gap-2 items-center`}
             >
               <span>
                 <svg
@@ -135,7 +137,7 @@ const Features = () => {
               </span>
               <span>Template Siap Pakai</span>
             </div>
-            <div className="text-sm text-[#545454] text-left">
+            <div className="text-xs md:text-sm text-[#545454] text-left">
               Tak perlu mendesain dari nol! Gunakan beragam template yang bisa
               langsung disesuaikan dengan kebutuhan bisnismu.
             </div>
@@ -144,7 +146,7 @@ const Features = () => {
 
         {/* Item 3 */}
         <div className="flex flex-col bg-[#F5F5F9] rounded-xl p-4 py-6 justify-between">
-          <div className="h-[60%] w-full">
+          <div className="h-[60%] w-full flex justify-center items-center">
             <Image
               src="/assets/ft_mockup3.png"
               alt="mockup"
@@ -155,7 +157,7 @@ const Features = () => {
           </div>
           <div className="space-y-2">
             <div
-              className={`${nunito.className} flex font-bold text-xl gap-2 items-center`}
+              className={`${nunito.className} flex font-bold text-base lg:text-xl gap-2 items-center`}
             >
               <span>
                 <svg
@@ -183,7 +185,7 @@ const Features = () => {
               </span>
               <span>Edit Cepat & Flexible</span>
             </div>
-            <div className="text-sm text-[#545454] text-left">
+            <div className="text-xs md:text-sm text-[#545454] text-left">
               Sesuaikan konten dengan mudah menggunakan Quick Edit. Ubah gambar,
               musik, atau elemen lainnya tanpa keahlian editing.
             </div>
@@ -191,10 +193,10 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-3 px-9 pt-3">
+      <div className="text-left flex flex-col md:flex-row gap-3 lg:px-9 pt-3">
         {/* Item 4 */}
         <div className="flex flex-col bg-[#F5F5F9] rounded-xl p-4 py-6 justify-between">
-          <div className="h-[60%] w-full">
+          <div className="h-[60%] w-full flex justify-center items-center">
             <Image
               src="/assets/ft_mockup4.png"
               alt="mockup"
@@ -205,7 +207,7 @@ const Features = () => {
           </div>
           <div className="space-y-2">
             <div
-              className={`${nunito.className} flex font-bold text-xl gap-2 items-center`}
+              className={`${nunito.className} flex font-bold text-base lg:text-xl gap-2 items-center`}
             >
               <span>
                 <svg
@@ -230,7 +232,7 @@ const Features = () => {
               </span>
               <span>Analisis & Rekomendasi Cerdas</span>
             </div>
-            <div className="text-sm text-[#545454] text-left">
+            <div className="text-xs md:text-sm text-[#545454] text-left">
               Dapatkan insight performa video dengan Videfly Analytics, lengkap
               dengan saran improvement untuk konten yang lebih menarik dan
               efektif.
@@ -240,7 +242,7 @@ const Features = () => {
 
         {/* Item 5 */}
         <div className="flex flex-col bg-[#F5F5F9] rounded-xl p-4 py-6 justify-between">
-          <div className="h-[60%] w-fullbg-red-200">
+          <div className="h-[60%] w-full flex justify-center items-center">
             <Image
               src="/assets/ft_mockup5.png"
               alt="mockup"
@@ -251,7 +253,7 @@ const Features = () => {
           </div>
           <div className="space-y-2">
             <div
-              className={`${nunito.className} flex font-bold text-xl gap-2 items-center`}
+              className={`${nunito.className} flex font-bold text-base lg:text-xl gap-2 items-center`}
             >
               <span>
                 <svg
@@ -300,7 +302,7 @@ const Features = () => {
               </span>
               <span>Jadwalkan & Posting Otomatis</span>
             </div>
-            <div className="text-sm text-[#545454] text-left">
+            <div className="text-xs md:text-sm text-[#545454] text-left">
               Hemat waktu dengan integrasi media sosial! Langsung jadwalkan dan
               publikasikan kontenmu ke berbagai platform tanpa perlu pindah
               aplikasi.
